@@ -1,7 +1,7 @@
 package strategy;
 
-class ShootBehavior implements DefenseBehavior {
+public class ChasePuckBehavior implements DefenseBehavior {
   public String play() {
-    return "Shoots at the goal";
+    return "chases the punk";
   }
 }

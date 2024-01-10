@@ -1,7 +1,7 @@
 package strategy;
 import java.util.Random;
 
-class BlockBehavior implements DefenseBehavior {
+public class BlockBehavior implements DefenseBehavior {
   public String play() {
     Random rand = new Random();
     int randNum = rand.nextInt(3) + 1;

@@ -9,14 +9,14 @@ public class Goalie extends Player{
   
   // mutator
   public void setOffenceBehavior() {
-    
+    super.offenceBehavior = new BlockGoalBehavior();
   }
 
   public void setDefenceBehavior() {
-
+    super.defenceBehavior = new BlockGoalBehavior();
   }
 
   public String toString() {
-    return;
+    return super.toString() + "plays the position: Goalie";
   }
 }

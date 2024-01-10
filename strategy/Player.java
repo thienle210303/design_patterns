@@ -6,7 +6,7 @@ public abstract class Player {
   // variable
   private String firstName;
   private String lastName;
-  protected DefenceBehavior defenceBehavior;
+  protected DefenseBehavior defenceBehavior;
   protected OffenceBehavior offenceBehavior;
   protected Random rand;
 
@@ -17,20 +17,22 @@ public abstract class Player {
   }
 
   // mutator
-  public void setDefenceBehavior() {
+  public void setDefenceBehavior() {}
 
-  }
-
-  public void setOffenceBehavior() {
-  
-  }
+  public void setOffenceBehavior() {}
 
   // method
   public String play(boolean possession) {
-    return "";
+    if(possession) {
+      this.setOffenceBehavior();
+      return this.offenceBehavior.play();
+    } else {
+      this.setDefenceBehavior();
+      return this.defenceBehavior.play();
+    }
   }
 
   public String toString() {
-    return "";
+    return this.firstName + " " + this.lastName + " plays the position: ";
   }
 }
