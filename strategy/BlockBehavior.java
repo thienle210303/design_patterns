@@ -1,23 +1,16 @@
+package strategy;
 import java.util.Random;
 
-public class BlockBehavior implements defenceBehavior {
+class BlockBehavior implements DefenseBehavior {
   public String play() {
-    String returnBehavior = "blocks player from ";
     Random rand = new Random();
-    int randNum = random.nextInt(3) + 1;
+    int randNum = rand.nextInt(3) + 1;
 
-    switch (randNum) {
-      case 1:
-        returnBehavior += "passing";
-        break;
-      case 2:
-        returnBehavior += "shooting";
-        break;
-      case 3:
-        returnBehavior += "puck";
-        break;
+    if (randNum == 1) {
+      return "blocks player from passing";
+    } else if (randNum == 2) {
+      return "blocks player from shooting";
     }
-
-    return returnBehavior;
+    return "checks player with puck";
   }
 }

@@ -1,5 +1,5 @@
 package strategy;
 
-public interface DefenseBehavior {
+public interface OffenceBehavior {
   public String play();
 }

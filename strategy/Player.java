@@ -1,6 +1,8 @@
+package strategy;
+
 import java.util.Random;
 
-public class Player {
+public abstract class Player {
   // variable
   private String firstName;
   private String lastName;
@@ -9,19 +11,18 @@ public class Player {
   protected Random rand;
 
   // constructor
-  public Player(String firstName, String lastName, boolean offenceBehavior) {
+  public Player(String firstName, String lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
   }
 
   // mutator
   public void setDefenceBehavior() {
-    this.setDefenceBehavior != this.setDefenceBehavior;
+
   }
 
   public void setOffenceBehavior() {
-    this.setOffenceBehavior != this.setOffenceBehavior;
-
+  
   }
 
   // method
