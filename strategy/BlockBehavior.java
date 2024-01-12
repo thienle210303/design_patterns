@@ -10,7 +10,8 @@ public class BlockBehavior implements DefenseBehavior {
       return "blocks player from passing";
     } else if (randNum == 2) {
       return "blocks player from shooting";
+    } else {
+      return "checks player with puck";
     }
-    return "checks player with puck";
   }
 }
