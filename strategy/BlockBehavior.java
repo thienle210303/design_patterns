@@ -2,6 +2,7 @@ package strategy;
 import java.util.Random;
 
 public class BlockBehavior implements DefenseBehavior {
+  @Override
   public String play() {
     Random rand = new Random();
     int randNum = rand.nextInt(3) + 1;

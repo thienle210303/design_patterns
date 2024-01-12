@@ -2,6 +2,9 @@ package strategy;
 
 import java.util.Random;
 
+/*
+ * Player class is parent of Goalie, Forward and Defenceman
+ */
 public abstract class Player {
   // variable
   private String firstName;
@@ -19,7 +22,6 @@ public abstract class Player {
 
   // mutator
   public void setDefenceBehavior() {}
-
   public void setOffenceBehavior() {}
 
   // method
