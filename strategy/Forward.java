@@ -1,6 +1,5 @@
 package strategy;
 
-import java.util.Random;
 public class Forward extends Player{
   
   // Constructor
@@ -10,8 +9,7 @@ public class Forward extends Player{
   
   // mutator
   public void setOffenceBehavior() {
-    Random rand = new Random();
-    int randNum = rand.nextInt(2) + 1;
+    int randNum = this.rand.nextInt(2) + 1;
     if (randNum == 1) {
       super.offenceBehavior = new PassBehavior();
     } else {
@@ -21,14 +19,13 @@ public class Forward extends Player{
   }
 
   public void setDefenceBehavior() {
-    Random rand = new Random();
-    int randNum = rand.nextInt(2) + 1;
+    int randNum = this.rand.nextInt(2) + 1;
     if (randNum == 1) {
       super.defenceBehavior = new ChasePuckBehavior();
     } else {
       super.defenceBehavior = new BlockBehavior();
     }
-    super.defenceBehavior = null;
+    super.offenceBehavior = null;
   }
 
   public String toString() {

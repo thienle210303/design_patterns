@@ -1,7 +1,5 @@
 package strategy;
 
-import java.util.Random;
-
 class Defenceman extends Player{
   
   // Constructor
@@ -11,23 +9,23 @@ class Defenceman extends Player{
   
   // mutator
   public void setOffenceBehavior() {
-    Random rand = new Random();
-    int randNum = rand.nextInt(10) + 1;
+    int randNum = this.rand.nextInt(10) + 1;
     if (randNum == 1) {
-      super.offenceBehavior = new PassBehavior();
-    } else {
       super.offenceBehavior = new SlapShotBehavior();
+    } else {
+      super.offenceBehavior = new PassBehavior();
     }
+    super.defenceBehavior = null;
   }
 
   public void setDefenceBehavior() {
-    Random rand = new Random();
-    int randNum = rand.nextInt(2) + 1;
+    int randNum = this.rand.nextInt(2) + 1;
     if (randNum == 1) {
       super.defenceBehavior = new ChasePuckBehavior();
     } else {
       super.defenceBehavior = new BlockBehavior();
     }
+    super.offenceBehavior = null;
   }
 
   public String toString() {

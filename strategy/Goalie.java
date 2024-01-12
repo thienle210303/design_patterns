@@ -10,10 +10,13 @@ public class Goalie extends Player{
   // mutator
   public void setOffenceBehavior() {
     super.offenceBehavior = new BlockGoalBehavior();
+    super.defenceBehavior = null;
   }
 
   public void setDefenceBehavior() {
     super.defenceBehavior = new BlockGoalBehavior();
+    super.offenceBehavior = null;
+    
   }
 
   public String toString() {
