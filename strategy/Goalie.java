@@ -1,6 +1,7 @@
 package strategy;
 /*
  * Goalie class is child of Player class
+ * @authors: Thien
  */
 public class Goalie extends Player{
   // Constructor

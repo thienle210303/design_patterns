@@ -2,6 +2,7 @@ package strategy;
 
 /*
  * Defenceman child of Player class
+ * @authors: Thien
  */
 class Defenceman extends Player{
   // Constructor
@@ -36,6 +37,7 @@ class Defenceman extends Player{
     super.offenceBehavior = null;
   }
 
+  @Override
   public String toString() {
     return super.toString() + "play the position Defenceman";
   }

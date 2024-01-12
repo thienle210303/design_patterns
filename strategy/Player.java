@@ -4,6 +4,7 @@ import java.util.Random;
 
 /*
  * Player class is parent of Goalie, Forward and Defenceman
+ * @authors: Thien
  */
 public abstract class Player {
   // variable
@@ -25,6 +26,10 @@ public abstract class Player {
   public void setOffenceBehavior() {}
 
   // method
+  /*
+   * Play function represent the action based on possession
+   * @return: the string of action based on possession
+   */
   public String play(boolean possession) {
     if(possession) {
       this.setOffenceBehavior();
@@ -35,6 +40,10 @@ public abstract class Player {
     }
   }
 
+  /*
+   * toString method to return the player name with the position
+   * @returns: the string of player name with the position
+   */
   public String toString() {
     return this.firstName + " " + this.lastName + " plays the position: ";
   }

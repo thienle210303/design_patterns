@@ -1,6 +1,7 @@
 package strategy;
 /**
  * Forward class child of Player class
+ * @authors: Thien
  */
 public class Forward extends Player{
   // Constructor

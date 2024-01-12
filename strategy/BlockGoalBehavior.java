@@ -1,6 +1,10 @@
 package strategy;
 import java.util.Random;
 
+/*
+ * Block goal behavior implements offence and defense behavior interface
+ * @authors: Thien
+ */
 public class BlockGoalBehavior implements OffenceBehavior, DefenseBehavior {
   @Override
   public String play() {

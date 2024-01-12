@@ -1,6 +1,9 @@
 package strategy;
 import java.util.Random;
-
+/*
+ * Block behavior class implement defense behavior interface
+ * @authors: Thien
+ */
 public class BlockBehavior implements DefenseBehavior {
   @Override
   public String play() {
