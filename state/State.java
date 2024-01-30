@@ -5,7 +5,7 @@ import java.util.Random;
 
 public abstract class State {
     protected SpellingList spellingList;
-    private ArrayList<String> words;
+    protected ArrayList<String> words;
     private Random rand;
 
     public State(SpellingList spellingList) {
@@ -16,9 +16,7 @@ public abstract class State {
 
     public String getNextWord() {
         Integer index = rand.nextInt(this.words.size());
-        System.out.println(index);
         return words.get(index);
-
     }
 
     public void increaseGrade() {}
