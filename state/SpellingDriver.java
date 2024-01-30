@@ -22,7 +22,7 @@ public class SpellingDriver {
 
         while (true) {
             int option = getUserOption();
-            clear();
+            // clear();
 
             if (option == 1) {
                 showWordRound();

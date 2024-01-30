@@ -10,7 +10,7 @@ public class SpellingList {
         firstGradeState = new FirstGradeState(this);
         secondGradeState = new SecondGradeState(this);
         thirdGradeState = new ThirdGradeState(this);
-        state = firstGradeState;
+        this.state = firstGradeState;
     }
 
     public String getNextWord() {

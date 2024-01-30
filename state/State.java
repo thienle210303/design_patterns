@@ -10,13 +10,14 @@ public abstract class State {
 
     public State(SpellingList spellingList) {
         this.spellingList = spellingList;
-        words = new ArrayList<>();
-        rand = new Random();
+        this.words = new ArrayList<>();
+        this.rand = new Random();
     }
 
     public String getNextWord() {
-        Integer num = rand.nextInt(words.size());
-        return words.get(num);
+        Integer index = rand.nextInt(this.words.size());
+        System.out.println(index);
+        return words.get(index);
 
     }
 
