@@ -27,7 +27,7 @@ public class Ticket {
      * @return the name of the ticket
     */
     public String getName() {
-        return name;
+        return this.name;
     }
 
     /**
