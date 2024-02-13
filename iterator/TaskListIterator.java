@@ -24,7 +24,7 @@ public class TaskListIterator implements Iterator<Ticket>{
      * @return true if there are more tickets, false otherwise
      */
     public boolean hasNext() {
-        return this.position < this.tickets.length;
+        return this.position < this.tickets.length && this.tickets[position] != null;
     }
 
     /**
@@ -32,7 +32,7 @@ public class TaskListIterator implements Iterator<Ticket>{
      * @return the next ticket in the iteration
      */
     public Ticket next() {
-        return this.tickets[this.position++];
+        return hasNext() ? this.tickets[this.position++] : null;
 
     }
 }

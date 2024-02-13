@@ -86,7 +86,6 @@ public class TaskList {
             }
             resultSTR.append(temp.toString());
         }
-
         return resultSTR.toString();
     }
 }
